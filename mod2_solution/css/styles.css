@@ -1,0 +1,89 @@
+/* Base styles */
+body {
+    background-color: #808080;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+section {
+    background-color: white;
+}
+
+
+.section {
+    border: 2px solid black;
+    padding: 30px 10px 30px 10px;
+    margin: 20px 10px 20px 10px;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    font-weight: bold;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#section1 li div {
+    color: blue;
+}
+
+#section2 li div {
+    color: red;
+}
+
+#section3 li div {
+    color: green;
+}
+
+li div {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+}
+
+li p {
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0px 0px 5px 0px;
+    margin: 0px;
+}
+
+
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 28%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #section1, #section2 {
+        float: left;
+        width: 43%;
+    }
+
+    #section3 {
+        clear: both;
+        width: 92%
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 92%;
+    }
+}
